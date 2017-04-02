@@ -44,8 +44,8 @@ features <- read.table(getFullPath(folder,"/features.txt"),as.is=TRUE)
 
 featuresKeep <- grep(".*mean.*|.*std.*", features[,2])
 featuresKeepNames <- features[featuresKeep,2]
-featuresKeepNames = gsub('-mean', 'Mean', featuresKeepNames)
-featuresKeepNames = gsub('-std', 'StdDev', featuresKeepNames)
+featuresKeepNames <- gsub('-mean', 'Mean', featuresKeepNames)
+featuresKeepNames <- gsub('-std', 'StdDev', featuresKeepNames)
 featuresKeepNames <- gsub('[-()]', '', featuresKeepNames)
 
 # Step 1b and Step 2.
