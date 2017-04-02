@@ -6,7 +6,7 @@ Per the Instructions section below this project entails processing data to produ
 
 The following files were created to satisfy the requirements for this project:
 
-* run_analysis.R: an R script that produces the tidy dataset.
+* run_analysis.R: well-documented R script that produces the tidy dataset.
 * CodeBook.md: a description of the data in the tidy dataset.
 * week4cleaned.txt: file containing the produced tidy dataset.
 
@@ -16,7 +16,7 @@ Transformations on the data include:
 * Adding readable factors to activity levels, like WALKING.
 * Using the reshape2 library to produce the finished tidy dataset.
 
-To verify the contents of the tidy dataset, use these commands after setting your working directory:
+To verify the contents of the tidy dataset, use these commands after running the run_analysis.R script:
 
 ~~~~
 data <- read.table("week4cleaned.txt",header=TRUE)
